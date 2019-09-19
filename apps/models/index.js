@@ -1,0 +1,12 @@
+var khoahoc = require("./khoahoc.model")
+var dangky = require("./dangky.model")
+ var taikhoan = require("./taikhoan.model")
+ var diendan = require("./diendan.model")
+ var giangvien = require("./giangvien.model")
+ var hocvien = require("./hocvien.model")
+var khachhang = require("./khachhang.model")
+ var lophoc = require("./lophoc.model")
+ var phanhoi = require("./phanhoi.model")
+ var phonghoc = require("./phonghoc.model")
+ var thoikhoabieu = require("./thoikhoabieu.model")
+module.exports = {taikhoan,khoahoc,dangky,diendan, giangvien,hocvien,khachhang,lophoc,phanhoi,phonghoc,thoikhoabieu }
