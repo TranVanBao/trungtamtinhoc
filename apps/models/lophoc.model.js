@@ -6,30 +6,13 @@ const PostSchema = new Schema({
         required: true
     },  
     thoigianbatdau : {
-        type: Date,       
-        default: Date.now
-    }, 
-    thoigianketthuc : {
-        type: Date   
+        type: String,       
         
     }, 
-    soluonghocvien : {
-        type: Number,       
-        default: 0
-    },
-    id_hocvien: {
-        type: Schema.Types.ObjectId, 
-        ref: 'hocvien'
+    thoigianketthuc : {
+        type: String   
+        
     }, 
-    id_giangvien: {
-        type: Schema.Types.ObjectId, 
-        ref: 'giangvien'
-    }, 
-    id_khoahoc: {
-        type: Schema.Types.ObjectId, 
-        ref: 'khoahoc'
-    }, 
-  
     trangthai : {
         type: Number,       
         default: 1

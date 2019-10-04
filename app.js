@@ -2,7 +2,7 @@ const express = require("express");
 var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
 const app = express();
-const morgan = require("morgan");
+//const morgan = require("morgan");
 
 // database
 const db = require("./helpers/dbconnect");
@@ -13,7 +13,7 @@ var taikhoan = require("./apps/models/taikhoan.model");
 // body-parser
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(morgan("dev"));
+//app.use(morgan("dev"));
 
 // duong dan tuyet doi
 app.set("views", __dirname + "/apps/views");

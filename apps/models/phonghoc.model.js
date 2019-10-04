@@ -4,7 +4,12 @@ const PostSchema = new Schema({
     tenphong: {
         type: String,       
         required: true
-    },    
+    },
+    soluong: {
+        type: Number, 
+       default: 30
+    }, 
+
     trangthai: {
         type: Number, 
        default: 1

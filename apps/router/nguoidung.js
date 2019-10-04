@@ -5,17 +5,15 @@ const passPort = require('passport');
 const passPortLocal = require('passport-local').Strategy;
 const bodyParser = require('body-parser');
 const session = require('express-session');
-
 // session
 var router = express.Router();
 var user = [];
 
+//====================== router =================================//
 router.get("/", function(req, res) {
    res.render('../views/outsite/index.ejs')
   });
-
-// ================ end login - logout===================
-
+//=================================================================//
 router.get("/contact", function(req, res) {
   // res.json({"message": "This is Home Page"})
   res.render("../views/outsite/contact.ejs");
@@ -35,5 +33,5 @@ router.get("/dangky", function(req, res) {
   res.render("../views/outsite/dangky.ejs");
 });
 
-
+//==================end=====================================//
 module.exports = router;

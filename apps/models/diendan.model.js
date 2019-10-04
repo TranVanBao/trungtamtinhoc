@@ -7,7 +7,7 @@ const PostSchema = new Schema({
     },    
     id_khoahoc: {
         type: Schema.Types.ObjectId, 
-        ref: 'khoahoc'
+        ref: 'khoahoc.model'
     },
 },{ collection: 'diendan' })
 const Model = mongoose.model('diendan', PostSchema);

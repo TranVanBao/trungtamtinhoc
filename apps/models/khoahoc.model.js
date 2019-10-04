@@ -4,10 +4,14 @@
         tenkhoahoc: {
             type: String,       
             required: true
-        },  
+        },
+        hinhanh: {
+            type: String,       
+           // required: true
+        },    
         dieukien : {
             type: String,       
-            required: true
+           // required: true
         }, 
         loaikhoahoc : {
             type: String,       
@@ -19,17 +23,17 @@
         },
         soluongmua : {
             type: Number,       
-            required: true
+            //required: true
         },
         trangthai : {
             type: Number,       
             default: 1
         },
     },{ collection: 'khoahoc' })
-    const Model = mongoose.model('khoahoc', PostSchema);
+    const model = mongoose.model('khoahoc', PostSchema);
     
     var method =  {
     
     }
     
-    module.exports = { Model, method }
+    module.exports = { model, method }

@@ -7,23 +7,27 @@ const PostSchema = new Schema({
     },
     SDT: {
         type: Number,       
-        required: true
+        //required: true
     },    
     email: {
         type: String,       
-        required: true
+       // required: true
     },
     diachi : {
         type: String,       
-        required: true
+       // required: true
     },
     gioitinh: {
         type: String,       
-        required: true
+       // required: true
     },
     linhvuc : {
         type: String,       
-        required: true
+        //required: true
+    },
+    hinhanh : {
+        type: String,       
+       // required: true
     },   
     trangthai: {
         type: Number,       
@@ -31,7 +35,7 @@ const PostSchema = new Schema({
     },
     id_taikhoan: {
         type: Schema.Types.ObjectId, 
-        ref: 'taikhoan'
+        ref: 'taikhoan.model'
     },
        
 },{ collection: 'giangvien' })

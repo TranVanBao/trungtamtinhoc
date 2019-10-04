@@ -10,15 +10,17 @@
   <meta name="author" content="">
 
   <title>SB Admin - Dashboard</title>
-
-
+  <!-- validate ui  -->
+  <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css"> -->
   <!-- Custom fonts for this template-->
   <link href="../../../css/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <!-- Page level plugin CSS-->
   <link href="../../../css/admin/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="../../../css/admin/css/sb-admin.css" rel="stylesheet">
-
+  <link href="../../../css/admin/css/B_css.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -107,9 +109,9 @@
           <i class="fas fa-layer-group"></i>
           <span>Khóa học</span>
         </a>
-        <div class="dropdown-menu" aria-labelledby="pagesDropdown">          
+        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
           <a class="dropdown-item" href="/khon">Khóa học online</a>
-          <a class="dropdown-item" href="/khoff">Khóa học offline</a>
+          <a class="dropdown-item" href="/admin/khoahocoff">Khóa học offline</a>
           <div class="dropdown-divider"></div>
           <h6 class="dropdown-header">Khóa học online:</h6>
           <a class="dropdown-item" href="/khcophi">Khóa học trả phí</a>
@@ -117,39 +119,50 @@
         </div>
       </li>
       <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-user-alt"></i>
-            <span>Tài khoản</span>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="pagesDropdown">          
-            <a class="dropdown-item" href="/tknhanvien">Nhân viên</a>
-            <a class="dropdown-item" href="/tkkhachang">Khách hàng</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="/tkhocvien">Học viên</a>
-          </div>
+        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-user-alt"></i>
+          <span>Tài khoản</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+          <a class="dropdown-item" href="/admin/taikhoannv">Nhân viên</a>
+          <a class="dropdown-item" href="/tkkhachang">Khách hàng</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/tkhocvien">Học viên</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-id-card"></i>
+          <span>Thông tin</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+          <a class="dropdown-item" href="/admin/listnhanvien">Nhân viên</a>
+          <a class="dropdown-item" href="/admin/listhocvien">Học viên</a>
+        </div>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="/admin/listdangky">
+            <i class="fas fa-city"></i>
+            <span>Đăng ký học</span></a>
         </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-id-card"></i>
-              <span>Thông tin</span>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="pagesDropdown">          
-              <a class="dropdown-item" href="/tknhanvien">Nhân viên</a>             
-              <a class="dropdown-item" href="/tkhocvien">Học viên</a>
-            </div>
-          </li>
-             <li class="nav-item">
+      <li class="nav-item">
+        <a class="nav-link" href="/admin/listphonghoc">
+          <i class="fas fa-users"></i>
+          <span>Phòng học</span></a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="/forum">
           <i class="fas fa-users"></i>
           <span>Forum</span></a>
-      </li>    
+      </li>
       <li class="nav-item">
-        <a class="nav-link" href="/lophoc">
+        <a class="nav-link" href="/admin/listlophoc">
           <i class="fas fa-city"></i>
           <span>Lớp học</span></a>
       </li>
+    
       <li class="nav-item">
         <a class="nav-link" href="/phanhoi">
           <i class="fas fa-comment-alt"></i>

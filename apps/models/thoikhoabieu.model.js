@@ -2,20 +2,28 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const PostSchema = new Schema({
     thoigianbatdau: {
-        type: Date,      
+        type: String,      
         
     },  
     thoigianketthuc: {
-        type: Date,      
+        type: String,      
         
     },   
     id_lop: {
         type: Schema.Types.ObjectId, 
-        ref: 'lophoc'
+        ref: 'lophoc.model'
     },
     id_phong: {
         type: Schema.Types.ObjectId, 
-        ref: 'phonghoc'
+        ref: 'phonghoc.model'
+    },
+    id_khoahoc: {
+        type: Schema.Types.ObjectId, 
+        ref: 'khoahoc.model'
+    },
+    id_giangvien: {
+        type: Schema.Types.ObjectId, 
+        ref: 'giangvien.model'
     },
 },{ collection: 'thoikhoabieu' })
 const Model = mongoose.model('thoikhoabieu', PostSchema);

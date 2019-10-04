@@ -23,7 +23,7 @@ const PostSchema = new Schema({
     }, 
     id_taikhoan: {
         type: Schema.Types.ObjectId, 
-        ref: 'taikhoan'
+        ref: 'taikhoan.model'
     }, 
        
 },{ collection: 'khachhang' })

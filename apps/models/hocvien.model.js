@@ -11,15 +11,19 @@ const PostSchema = new Schema({
     },    
     email: {
         type: String,       
-        required: true
+        //required: true
+    },
+    ngaysinh : {
+        type: String,       
+       // required: true
     },
     diachi : {
         type: String,       
-        required: true
+       // required: true
     },
     gioitinh: {
         type: String,       
-        required: true
+        //required: true
     },   
     trangthai: {
         type: Number,       

@@ -11,11 +11,11 @@ const PostSchema = new Schema({
     },  
     id_diendan: {
         type: Schema.Types.ObjectId, 
-        ref: 'diendan'
+        ref: 'diendan.model'
     },
     id_taikhoanhoi: {
         type: Schema.Types.ObjectId, 
-        ref: 'taikhoan'
+        ref: 'taikhoan.model'
     },
     id_taikhoantraloi: {
         type: Schema.Types.ObjectId, 

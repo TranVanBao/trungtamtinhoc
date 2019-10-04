@@ -5,25 +5,29 @@ const PostSchema = new Schema({
         type: String,       
         required: true
     },
-    sdt: {
+    SDT: {
         type: Number,       
         required: true
     },
     email:{
         type: String,       
-        required: true
+        //required: true
     },
     diachi:{
         type: String,       
-        required: true
+       // required: true
     },
     ngaydangky: {
         type: Date,       
         default: Date.now
     },
-    id_khoahoc: {
-        type: Schema.Types.ObjectId, 
-        ref: 'khoahoc'
+    ten_khoahoc: {
+        type: String, 
+        ref: 'khoahoc.model'
+    },
+    trangthai: {
+        type: Number,       
+        default: 1
     },
 },{ collection: 'dangky' })
 const Model = mongoose.model('dangky', PostSchema);

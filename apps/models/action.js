@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
  var db = require("../../helpers/dbconnect")
  var db1 = mongoose.connection;
-//var {taikhoan,khoahoc,dangky,diendan, giangvien,hocvien,khachhang,lophoc,phanhoi,phonghoc,thoikhoabieu } = require("./index")
+var model = require("./index")
 
 var action = {
     selectByID: (model, id) => {
@@ -48,14 +48,15 @@ var action = {
                 return 1;
         });
     },
-    xoaDuLieu: (model, id) => {
-        model.findByIdAndDelete(id, (err) => {
+    xoaDuLieu: (model, id) => {       
+        model.findByIdAndDelete({ _id: id }, (err) => {
             if (err) {
-                console.log(err);
-                return 0;
+                console.log(err);               
+                return 0;              
             }
-            else
-                return 1;
+            else         
+                return 1;         
+                
         });
     },
 
